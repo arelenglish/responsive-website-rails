@@ -3,6 +3,7 @@ $(document).ready(function() {
     var news_feed = $('#news-feed');
 
     left_column.height(news_feed.height());
+    
     $(window).resize(function(){
       left_column.height(news_feed.height());
     });
