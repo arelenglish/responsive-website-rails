@@ -1,0 +1,22 @@
+<div id="main-container">
+  <aside id="left-column" class="">
+
+  </aside><!-- .left-column -->
+  <section id="news-feed">
+    <h1>Newsfeed</h1>
+    <% @posts.each do |post| %>
+      <article class="story-item">
+        <header>
+          <h1 class="story-title"><%= post.title %></h1>
+        </header><!-- .story-title -->
+        <img src="http://distilleryimage10.ak.instagram.com/203c4cdeb2e511e3a84b12ec4dc1b49e_8.jpg" class="profile-picture">
+        <p class="story-details">
+          <%= post.body %>
+        </p>
+        <p class="name">
+          - <%= post.user.name %>
+        </p>
+      </article><!-- .story-item -->
+    <% end %>
+  </section><!-- .news-feed -->
+</div><!-- .main-container -->
